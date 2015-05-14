@@ -11,8 +11,13 @@
                     <md-toolbar layout="row" style="background:#5C6BC0">
                         <h1 class="md-toolbar-tools" layout-align-gt-sm="center">Scorporo dell'IVA</h1>
                     </md-toolbar>
-                    <div layout="row" layout-sm="row" layout-align="center center">
-                        <md-subheader class="md-primary" style="font-weight:bold;">Calcolo dell'imponibile da un'importo totale e un'IVA indicata.</md-subheader>
+                    <div layout="column" layout-sm="column" layout-align="center center">
+                        <md-subheader class="md-primary" style="font-weight:bold;">
+                            Calcolo dell'imponibile da un'importo totale e un'IVA indicata.
+                        </md-subheader>
+                        <md-subheader class="md-primary" style="font-weight:bold;">
+                            Imponibile = Totale / ((100 + AliquotaIVA) / 100)
+                        </md-subheader>
                     </div>
                     <div layout layout-sm="column" layout-align="center center">
                         <md-input-container>
@@ -38,8 +43,13 @@
                     <md-toolbar layout="row" style="background:#5C6BC0">
                         <h1 class="md-toolbar-tools" layout-align-gt-sm="center">Calcolo importo con IVA</h1>
                     </md-toolbar>
-                    <div layout layout-sm="column" layout-align="center center">
-                        <md-subheader class="md-primary" style="font-weight:bold;">Calcolo dell'importo totale partendo dall'imponibile e un'IVA indicata.</md-subheader><br>
+                    <div layout="column" layout-sm="column" layout-align="center center">
+                        <md-subheader class="md-primary" style="font-weight:bold;">
+                            Calcolo dell'importo totale partendo dall'imponibile e un'IVA indicata.
+                        </md-subheader>
+                        <md-subheader class="md-primary" style="font-weight:bold;">
+                            Totale = Imponibile + (Imponibile * AliquotaIVA / 100)
+                        </md-subheader>
                     </div>
                     <div layout layout-sm="column" layout-align="center center">
                         <md-input-container>
@@ -68,8 +78,13 @@
                     <md-toolbar layout="row" style="background:#5C6BC0">
                         <h1 class="md-toolbar-tools" layout-align-gt-sm="center">Calcolo IVA applicata</h1>
                     </md-toolbar>
-                    <div layout layout-sm="column" layout-align="center center">
-                        <md-subheader class="md-primary" style="font-weight:bold;">Calcolo dell'IVA applicata partendo dall'imponibile e dal totale.</md-subheader><br>
+                    <div layout="column" layout-sm="column" layout-align="center center">
+                        <md-subheader class="md-primary" style="font-weight:bold;">
+                            Calcolo dell'IVA applicata partendo dall'imponibile e dal totale.
+                        </md-subheader>
+                        <md-subheader class="md-primary" style="font-weight:bold;">
+                            AliquotaIVA = (100 / (Imponibile / (Totale - Imponibile)))
+                        </md-subheader>
                     </div>
                     <div layout layout-sm="column" layout-align="center center">
                         <md-input-container>
@@ -96,8 +111,13 @@
                     <md-toolbar layout="row" style="background:#5C6BC0">
                         <h1 class="md-toolbar-tools" layout-align-gt-sm="center">Calcolo imponibile e totale da importo IVA e aliquota</h1>
                     </md-toolbar>
-                    <div layout layout-sm="column" layout-align="center center">
-                        <md-subheader class="md-primary" style="font-weight:bold;">Calcolo dell'imponibile e del totale da un'aliquota IVA indicata e il relativo importo.</md-subheader><br>
+                    <div layout="column" layout-sm="column" layout-align="center center">
+                        <md-subheader class="md-primary" style="font-weight:bold;">
+                            Calcolo dell'imponibile e del totale da un'aliquota IVA indicata e il relativo importo.
+                        </md-subheader>
+                        <md-subheader class="md-primary" style="font-weight:bold;">
+                            Imponibile = ImportoIVA / AliquotaIVA * 100
+                        </md-subheader>
                     </div>
                     <div layout layout-sm="column" layout-align="center center">
                         <md-input-container>
