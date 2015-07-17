@@ -4,20 +4,6 @@
 
 angular.module('myApp.controllers', [])
     .controller('myCtrl', ['$scope', '$window', function($scope, $window) {
-
-        $scope.risolvi_clic = function(){
-            $scope.elaboraTabella(function(nScritti){
-                //if(scriviValori()>0){
-                if(nScritti>0){
-                    //alert("Nuovo giro");
-                    $timeout($scope.risolvi_clic(), 500);
-                }
-                else{
-                    $window.alert("Completed!");
-                }
-            });
-        };
-
         $scope.calcolaImponibile = function(){
             $scope.calcoloImponibile.Imponibile = $scope.calcoloImponibile.Totale / ((100 + $scope.calcoloImponibile.IVA) / 100);
             $scope.calcoloImponibile.ImportoIVA = $scope.calcoloImponibile.Totale - $scope.calcoloImponibile.Imponibile;
