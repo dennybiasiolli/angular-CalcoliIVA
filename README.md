@@ -1,4 +1,4 @@
-# angular-sudokuSolver
+# angular-CalcoliIVA
 A simple angularJs application to calculate VAT on prices and other funny things
 
 ***
