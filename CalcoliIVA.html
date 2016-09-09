@@ -89,19 +89,19 @@
                     <div layout layout-sm="column" layout-align="center center">
                         <md-input-container>
                             <label>Imponibile (importo senza IVA)</label>
-                            <input type="number" ng-model="calcoloIVA.Imponibile">
+                            <input type="number" ng-model="calcoloIVA.Imponibile" ng-change="calcolaIVA()">
                         </md-input-container>
                         <md-input-container>
                             <label>Totale con IVA</label>
-                            <input type="number" ng-model="calcoloIVA.Totale">
+                            <input type="number" ng-model="calcoloIVA.Totale" ng-change="calcolaIVA()">
                         </md-input-container>
                         <md-input-container>
                             <label>Importo IVA</label>
-                            <input type="number" disabled ng-model="calcoloIVA.ImportoIVA" ng-change="calcolaIVA()">
+                            <input type="number" disabled ng-model="calcoloIVA.ImportoIVA">
                         </md-input-container>
                         <md-input-container>
                             <label>Aliquota IVA</label>
-                            <input type="number" disabled style="width:100px;" ng-model="calcoloIVA.IVA" ng-change="calcolaIVA()">
+                            <input type="number" disabled style="width:100px;" ng-model="calcoloIVA.IVA">
                         </md-input-container>
                     </div>
                 </md-content>
