@@ -89,19 +89,19 @@
                     <div layout layout-sm="column" layout-align="center center">
                         <md-input-container>
                             <label>Imponibile (importo senza IVA)</label>
-                            <input type="number" ng-model="calcoloIVA.Imponibile">
+                            <input type="number" ng-model="calcoloIVA.Imponibile" ng-change="calcolaIVA()">
                         </md-input-container>
                         <md-input-container>
                             <label>Totale con IVA</label>
-                            <input type="number" ng-model="calcoloIVA.Totale">
+                            <input type="number" ng-model="calcoloIVA.Totale" ng-change="calcolaIVA()">
                         </md-input-container>
                         <md-input-container>
                             <label>Importo IVA</label>
-                            <input type="number" disabled ng-model="calcoloIVA.ImportoIVA" ng-change="calcolaIVA()">
+                            <input type="number" disabled ng-model="calcoloIVA.ImportoIVA">
                         </md-input-container>
                         <md-input-container>
                             <label>Aliquota IVA</label>
-                            <input type="number" disabled style="width:100px;" ng-model="calcoloIVA.IVA" ng-change="calcolaIVA()">
+                            <input type="number" disabled style="width:100px;" ng-model="calcoloIVA.IVA">
                         </md-input-container>
                     </div>
                 </md-content>
@@ -143,7 +143,7 @@
 
 
         <section layout="row" layout-sm="column" layout-align="center center">
-            <md-button class="md-primary" ng-href="https://github.com/dennybiasiolli/angular-sudokuSolver" target="_blank">View source on GitHub</md-button>
+            <md-button class="md-primary" ng-href="https://github.com/dennybiasiolli/angular-CalcoliIVA" target="_blank">View source on GitHub</md-button>
         </section>
 
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
