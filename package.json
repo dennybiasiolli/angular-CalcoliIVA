@@ -1,0 +1,35 @@
+{
+  "name": "angular-calcoli-iva",
+  "version": "1.0.0",
+  "description": "A simple angularJs application to calculate VAT on prices and other funny things",
+  "main": "CalcoliIVA.html",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "protractor": "^4.0.5"
+  },
+  "devDependencies": {
+    "protractor": "^4.0.5"
+  },
+  "scripts": {
+    "postinstall": "webdriver-manager update",
+    "protractor": "protractor",
+    "test": "protractor tests/conf.js",
+    "webdriver-manager": "webdriver-manager"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dennybiasiolli/angular-CalcoliIVA.git"
+  },
+  "keywords": [
+    "iva",
+    "scorporo"
+  ],
+  "author": "Denny Biasiolli",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dennybiasiolli/angular-CalcoliIVA/issues"
+  },
+  "homepage": "https://github.com/dennybiasiolli/angular-CalcoliIVA#readme"
+}
